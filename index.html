@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			window.onload = setup;
+		</script>
+		<title>Productivity: To Do</title>
+	</head>
+	<body>
+		<div id="bigBox">
+			<h1>Productivity</h1>
+			<div id="navBar">
+				<div id="leftNav" class="navItem"><a href="index.html">To Do List</a></div>
+				<div class="navItem"><a href="photoGallery.html">Photo Gallery</a></div>
+			</div>
+			<!--Start Coding Stuff Here-->
+			
+			<div>description of the task: <input type="text" id="descript" ></div>
+			<div>deadline time(military time): <input type="text" id="deadTime" ></div>
+			<div>category: <input type="text" id="categoryInput" ></div>
+			
+			<div id="calenderBox">
+				<table id="calendar">
+                    <tr>
+                        <th onclick="prevMonth()">&larr;</th>
+                        <th id="month" colspan="5">January</th>
+                        <th onclick="nextMonth()">&rarr;</th>
+                    </tr>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    <tr>
+                        <td id="cell_0.0" class="date"></td>
+                        <td id="cell_0.1" class="date"></td>
+                        <td id="cell_0.2" class="date"></td>
+                        <td id="cell_0.3" class="date"></td>
+                        <td id="cell_0.4" class="date"></td>
+                        <td id="cell_0.5" class="date"></td>
+                        <td id="cell_0.6" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_1.0" class="date"></td>
+                        <td id="cell_1.1" class="date"></td>
+                        <td id="cell_1.2" class="date"></td>
+                        <td id="cell_1.3" class="date"></td>
+                        <td id="cell_1.4" class="date"></td>
+                        <td id="cell_1.5" class="date"></td>
+                        <td id="cell_1.6" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_2.0" class="date"></td>
+                        <td id="cell_2.1" class="date"></td>
+                        <td id="cell_2.2" class="date"></td>
+                        <td id="cell_2.3" class="date"></td>
+                        <td id="cell_2.4" class="date"></td>
+                        <td id="cell_2.5" class="date"></td>
+                        <td id="cell_2.6" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_3.0" class="date"></td>
+                        <td id="cell_3.1" class="date"></td>
+                        <td id="cell_3.2" class="date"></td>
+                        <td id="cell_3.3" class="date"></td>
+                        <td id="cell_3.4" class="date"></td>
+                        <td id="cell_3.5" class="date"></td>
+                        <td id="cell_3.6" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_4.0" class="date"></td>
+                        <td id="cell_4.1" class="date"></td>
+                        <td id="cell_4.2" class="date"></td>
+                        <td id="cell_4.3" class="date"></td>
+                        <td id="cell_4.4" class="date"></td>
+                        <td id="cell_4.5" class="date"></td>
+                        <td id="cell_4.6" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_5.0" class="date"></td>
+                        <td id="cell_5.1" class="date"></td>
+                        <td id="cell_5.2" class="date"></td>
+                        <td id="cell_5.3" class="date"></td>
+                        <td id="cell_5.4" class="date"></td>
+                        <td id="cell_5.5" class="date"></td>
+                        <td id="cell_5.6" class="date"></td>
+                    </tr>
+                </table>
+			</div>
+			<button type="button" onclick="addToDo()">Add</button>
+			
+			<h2>Categories</h2>
+			<p id="categoryDisplay"></p>
+			
+			<h2>To Do</h2>
+			<div id="theList">
+			</div>
+			
+			
+			<div>
+				<button type="button" onclick="sortByAdded()">Sort: order added</button>
+				<button type="button" onclick="sortByDeadline()">Sort: deadline</button>
+				<button type="button" onclick="sortByCategory()">Sort: Category</button>
+				<button type="button" onclick="sortByComplete()">Sort: incomplete</button>
+			</div>
+			
+		
+		<div>
+	</body>
+</html>

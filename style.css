@@ -1,0 +1,87 @@
+#bigBox{width: 500px; height: 500px;}
+body{
+	font-size: 1em;
+	font : Times New Roman;
+	font-family : sans-serif;
+}
+h1 {text-align: center; font-size : 3em;}
+h2 {font-size: 2em;}
+
+#navBar{width: 100%; height: 10%;background-color:black;}
+.navItem{width:49%; height:100%;background-color:blue; float: left; text-align : center; }
+.navItem a { vertical-align: middle; color:black; font-size: 2em; text-decoration: none;}
+#leftNav{margin-right:2%;}
+
+#theList{}
+.listElem{ border-style: solid; border-width: 1px;}
+#categoryDisplay{}
+
+
+
+
+#forLight{
+	text-align:center;
+	position: absolute;
+	top:1%;
+	width:100%;
+	height:99%;
+	background-color: black; /*in case rgba doesnt work*/
+    background-color: rgba(0,0,0,0.9);
+	/*top:25%;
+	left:25%;*/
+	z-index:99; 
+}
+#forLight img {width : 50%;}
+
+.tableImg{width:100px;}
+
+
+
+
+th {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 1px #000000;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: #FFFFFF;
+}
+
+td {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    border: solid 1px #000000;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: #FFFFFF;
+}
+
+#wrapper {
+    width: 70%;
+    min-width: 960px;
+    height: 100%;
+    background-color: #E1E1E1;
+}
+
+#main {
+    padding: 10px;
+}
+
+#next_month, #prev_month {
+    cursor: pointer;
+}
+
+#next_month:hover, #prev_month:hover {
+    background-color: #E1E1E1;
+}
+
+.date {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.date:hover {
+    background-color: #BFDCFF;
+}
